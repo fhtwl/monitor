@@ -13,7 +13,7 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
     tsconfigRootDir: __dirname,
-    project: ['./tsconfig.json'],
+    project: ['./tsconfig.json', './vite.config.js'],
   },
 
   plugins: ['@typescript-eslint'],
@@ -36,6 +36,7 @@ module.exports = {
     '@typescript-eslint/ban-types': 'off',
     'no-prototype-builtins': 'off',
     'space-before-function-paren': 0,
+    "@typescript-eslint/no-unsafe-return": "off"
   },
 
   extends: [

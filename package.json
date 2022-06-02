@@ -5,7 +5,10 @@
   "main": "index.ts",
   "scripts": {
     "dev": "nodemon ./src/index.ts",
-    "build": "tsc"
+    "start": "vite --force",
+    "build": "tsc",
+    "example-build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -21,12 +24,14 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.27.0",
     "@typescript-eslint/parser": "^5.27.0",
+    "@vitejs/plugin-legacy": "^1.8.2",
+    "@vitejs/plugin-vue": "^2.3.3",
     "eslint": "^8.16.0",
     "eslint-config-prettier": "^8.5.0",
     "nodemon": "^2.0.16",
     "prettier": "^2.6.2",
     "ts-node": "^10.8.0",
-    "typescript": "^4.7.2"
-  },
-  "dependencies": {}
+    "typescript": "^4.7.2",
+    "vite-plugin-html": "^3.2.0"
+  }
 }
