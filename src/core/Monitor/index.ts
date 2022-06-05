@@ -19,7 +19,7 @@ export default class Monitor {
   private init() {
     console.log('init')
     this.initErrorListener()
-    // this.test()
+    this.test()
   }
 
   /**
@@ -43,11 +43,8 @@ export default class Monitor {
     )
   }
 
-  // public test() {
-  //   setTimeout(() => {
-  //     Promise.all([testJs(), testPromise(), testStatic()]).then(() => {
-  //       console.log('test')
-  //     })
-  //   })
-  // }
+  public test() {
+    const res = window.performance.getEntries().map((item) => item)
+    console.log(res)
+  }
 }
